@@ -1,21 +1,17 @@
 import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom'//Switch only renders one page
+import ShopPage from './pages/shop/shop.component.jsx'
 
 import HomePage from './pages/homepage/hompage.component'
 
-const HatsPage = () =>(
-  <div>
-    <h1>HAT PAGE</h1>
-  </div>
-);
 
 function App() {
   return (
     <div>
       <Switch>
-        <Route path='/Hats' component={HatsPage}/>
-        <Route  path='/' component={HomePage} />
+        <Route exact path='/' component={HomePage} />     
+        <Route path='/shop' component={ShopPage} />
       </Switch>
       
       {/* <HomePage></HomePage> */}
