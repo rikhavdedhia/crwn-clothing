@@ -5,7 +5,7 @@ import {createStructuredSelector} from 'reselect'
 import { Switch, Route, Redirect } from 'react-router-dom'//Switch only renders one page
 import ShopPage from './pages/shop/shop.component.jsx'
 import {connect} from 'react-redux';
-import HomePage from './pages/homepage/hompage.component.jsx'
+import HomePage from './pages/homepage/homepage.component.jsx'
 import Header from './components/header/header.component.jsx'
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up//sign-in-and-sign-up.component.jsx';
 import {auth, createUserProfileDocument} from './firebase/firebase.utils.js';
